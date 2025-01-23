@@ -1,1 +1,68 @@
-/* your code here */
+footer{
+	font-family: Arial, Helvetica, sans-serif;
+}
+.bottom-details{
+	height: 50px;
+	background-color: #2C303A;
+	color: #A2A4A8;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.media-icons{
+	display: flex;
+	gap: 6px;
+}
+.top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: black;
+	height: 80px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.logo_name{
+	color: white;
+	font-size: 25px;
+	font-weight: bolder;
+}
+.link-boxes{
+	background-color: black;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+a{
+	text-decoration: none;
+	color: #656565;
+}
+.box{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.link-boxes{
+	display: flex;
+	justify-content: space-between;
+}
+@media (max-width: 700px){
+	.bottom-details{
+		flex-direction: column;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.link-boxes{
+		display: grid;
+		grid-template: repeat(2, 50%) / repeat(2, 50%);
+		row-gap: 25px;
+	}
+}
+@media (max-width: 450px){
+	.top{
+		flex-direction: column;
+	}
+}
